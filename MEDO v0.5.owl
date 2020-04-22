@@ -1,0 +1,808 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/medo.owl/"
+     xml:base="http://purl.obolibrary.org/obo/medo.owl/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/medo.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/medo/releases/2020-02-20/medo.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2.0/bfo.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/obi/2019-11-12/obi.owl"/>
+        <obo:IAO_0000116>created Feb 20, 2020</obo:IAO_0000116>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MEDO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MEDO_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
+        <rdfs:label xml:lang="en">instructional method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MEDO_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MEDO_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000001"/>
+        <obo:IAO_0000115>Use of patient cases (actual or theoretical) to stimulate discussion, questioning, problem solving, and reasoning on issues pertaining to the basic sciences and clinical disciplines (Anderson, 2010)</obo:IAO_0000115>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
+        <rdfs:label xml:lang="en">case-based instruction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MEDO_0000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MEDO_0000003">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/MEDO_0000001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000030"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000844"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000032"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OAE_0001817"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OHD_0000179"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000001"/>
+        <obo:IAO_0000115>Practical experience(s) in patient care and health-related services where actual patients are studied and treatment and/or counseling is given (ERIC,1968&amp;1981; CIStandardizedVocabulary Subcommitee)</obo:IAO_0000115>
+        <obo:IAO_0000119>Practical experience(s) in patient care and health-related services carried out in an ambulatory/outpatient setting where actual patients are studied and treatment and/or counseling is given(ERIC,1968&amp;1981;CIStandardizedVocabulary Subcommitee)</obo:IAO_0000119>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
+        <rdfs:label xml:lang="en">clinical experience</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MEDO_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MEDO_0000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000001"/>
+        <obo:IAO_0000119>Technique [that] allows learners to organize and represent knowledge in an explicit interconnected network. Linkages between concepts are explored to make apparent connections that are not usually seen. (Weiss &amp; Levinson, 2000, citing Novak &amp; Gowin, 1984)</obo:IAO_0000119>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
+        <rdfs:label xml:lang="en">concept mapping</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MEDO_0000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MEDO_0000005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000001"/>
+        <obo:IAO_0000119>Departmentally-driven and/or content-specific presentations by clinical faculty/professionals, residents, and/or learners before a large group of other professionals and/or learners (e.g., Mortality and Morbidity, or &quot;M &amp; M,&quot; Conference--Biddle &amp; Oaster, 1990--and Interdisciplinary Conference--Feldman, 1999; also see Cooke, Irby, &amp; O&apos;Brien, 2010b)</obo:IAO_0000119>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
+        <rdfs:label xml:lang="en">conference presentation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MEDO_0000006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MEDO_0000006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000001"/>
+        <obo:IAO_0000119>A description, performance, or explanation of a process, illustrated by examples, observable action, specimens, etc.</obo:IAO_0000119>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
+        <rdfs:label xml:lang="en">demonstration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MEDO_0000007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MEDO_0000007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000001"/>
+        <obo:IAO_0000119>An exchange (oral or written) of opinions, observations, or ideas among a Large Group [more than 12 participants], usually to analyze, clarify, or reach conclusions about issues, questions, or problems (ERIC, 1980)</obo:IAO_0000119>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
+        <rdfs:label xml:lang="en">discussion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MEDO_0000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MEDO_0000008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000001"/>
+        <obo:IAO_0000119>Individual or group games that have cognitive, social, behavioral, and/or emotional, etc., dimensions which are related to educational objectives (ERIC, 1966a)</obo:IAO_0000119>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
+        <rdfs:label xml:lang="en">educational games</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MEDO_0000009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MEDO_0000009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000001"/>
+        <obo:IAO_0000119>Instructor-/ or mentor-guided learning activities to be performed by the learner outside of formal educational settings (classroom, lab, clinic) (Bowen &amp; Smith, 2010); Dedicated time on learner schedules to prepare for specific learning activities, e.g., case discussions, TBL, PBL, clinical activities, research project(s)</obo:IAO_0000119>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
+        <rdfs:label xml:lang="en">independent learning</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MEDO_0000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MEDO_0000010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000001"/>
+        <obo:IAO_0000119>Aforuminwhichparticipantsdiscussrecentresearchpapersfromfieldliteratureinorderto develop critical reading skills (comprehension, analysis, and critique) (Cooke, Irby, &amp; O&apos;Brien, 2010a; Mann &amp; O&apos;Neill, 2010; Woods &amp; Winkel, 1982)</obo:IAO_0000119>
+        <obo:IAO_0000600>Note(s): “[A] forum for the education of residents in the techniques of critical reading, that is, the ability to understand the format of an article, analyze the process by which the study was done, recognize the limitations of thework,andcritiquetheresultsandinterpretation”(Woods&amp;Winkel,1982);“[A]forumfor discussionof recentpapersin[a]specialty[and]mechanismforresidents[and/orlearners]tolearnhowto assessthequality and import of clinical research papers” (Cooke, Irby, &amp; O&apos;Brien, 2010a)</obo:IAO_0000600>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
+        <rdfs:label xml:lang="en">journal club</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MEDO_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MEDO_0000011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000006"/>
+        <obo:IAO_0000119>Hands-on or simulated exercises in which learners collect or use data to test and/or verify hypotheses or to address questions about principles and/or phenomena.</obo:IAO_0000119>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
+        <rdfs:label xml:lang="en">laboratory exercises</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MEDO_0000012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MEDO_0000012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000001"/>
+        <obo:IAO_0000119>An instruction or verbal discourse by a speaker before a large group of learners (Institute for International Medical Education, 2002)</obo:IAO_0000119>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
+        <rdfs:label xml:lang="en">lecture</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MEDO_0000013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MEDO_0000013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000001"/>
+        <obo:IAO_0000119>The provision of guidance, direction and support by senior professionals to learners or more junior professionals (U.S. National Library of Medicine, 1987)</obo:IAO_0000119>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
+        <rdfs:label xml:lang="en">mentorship</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MEDO_0000014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MEDO_0000014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000001"/>
+        <obo:IAO_0000119>A presentation by faculty to faculty, residents, and/or other learners of patient findings, history and physical, differential diagnosis, treatment plan, etc. (Wiener, 1974; CI Standardized Vocabulary Subcommittee)</obo:IAO_0000119>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
+        <rdfs:label xml:lang="en">patient presentation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MEDO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MEDO_0000015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000043"/>
+        <obo:IAO_0000119>Learner-to-learner instruction for the mutual learning experience of both &quot;teacher&quot; and &quot;learner&quot;; may be &quot;peer-to-peer&quot; (same training level) or &quot;near-peer&quot; (higher-level learner teaching lower-level learner) (Soriano et al., 2010)</obo:IAO_0000119>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
+        <rdfs:label xml:lang="en">peer teaching</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MEDO_0000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MEDO_0000016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000003"/>
+        <obo:IAO_0000119>Practical experience in medical and health-related services wherein the professionally-trained learner works under the supervision of an established professional in the particular field (U. S. National Library of Medicine, 1974)</obo:IAO_0000119>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
+        <rdfs:label xml:lang="en">preceptorship</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MEDO_0000017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MEDO_0000017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000001"/>
+        <obo:IAO_0000119>The use of carefully selected and designed patient cases that demand from the learner acquisition of critical knowledge, problem solving proficiency, self-directed learning strategies, and team participation skills as those needed in professional practice (Eshach &amp; Bitterman, 2003; see also Major
+&amp; Palmer, 2001; Cooke, Irby, &amp; O&apos;Brien, 2010b; Barrows &amp; Tamblyn, 1980)</obo:IAO_0000119>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
+        <rdfs:label xml:lang="en">problem-based learning</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MEDO_0000018 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MEDO_0000018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000043"/>
+        <obo:IAO_0000119>Examination by the learner of his/her personal experiences of a learning event, including the cognitive, emotional, and affective aspects; the use of these past experiences in combination with objective information to inform present clinical decision-making and problem-solving (Mann, Gordon, &amp; MacLeod, 2009; Mann &amp; O’Neill, 2010); reflecting on patients’ experiences using narrative and/or storytelling (Advances in Health Sciences Education, 18(4), 727-743. http://link.springer.com/article/10.1007/s10459-012-9411-y)</obo:IAO_0000119>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
+        <rdfs:label xml:lang="en">self-reflection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MEDO_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MEDO_0000019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000001"/>
+        <obo:IAO_0000119>Short-term or sustained participation in research. Research is defined as a systematic investigation, including research development, testing and evaluation, designed to develop or contribute to generalizable knowledge. Activities which meet this definition constitute research for purposes of this policy, whether or not they are conducted or supported under a program which is considered research for other purposes. For example, some demonstration and service programs may include research activities. (U.S. Department of Health &amp; Human Services 45 CFR 46 http://www.hhs.gov/ohrp/humansubjects/guidance/45cfr46.html)</obo:IAO_0000119>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
+        <rdfs:label xml:lang="en">research participation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MEDO_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MEDO_0000020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000001"/>
+        <obo:IAO_0000119>The adopting or performing the role or activities of another individual</obo:IAO_0000119>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
+        <rdfs:label xml:lang="en">role play</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MEDO_0000021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MEDO_0000021">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000043"/>
+        <obo:IAO_0000119>Learners taking the initiative for their own learning: diagnosing needs, formulating goals, identifying resources, implementing appropriate activities, and evaluating outcomes (Garrison, 1997; Spencer &amp; Jordan, 1999)</obo:IAO_0000119>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
+        <rdfs:label xml:lang="en">self-directed learning</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MEDO_0000022 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MEDO_0000022">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000001"/>
+        <obo:IAO_0000119>A structured learning experience that combines community service with preparation and reflection.
+LCME Glossary of Terms for LCME Accreditation Standards and Elements 2015-2016, October 2015)</obo:IAO_0000119>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
+        <rdfs:label xml:lang="en">service learning activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MEDO_0000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MEDO_0000023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000020"/>
+        <obo:IAO_0000119>A method used to replace or amplify real patient encounters with scenarios designed to replicate real health care situations, using lifelike mannequins, physical models, standardized patients, or computers (Passiment, Sacks, &amp; Huang, 2011)</obo:IAO_0000119>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
+        <rdfs:label xml:lang="en">simulation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MEDO_0000024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MEDO_0000024">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000001"/>
+        <obo:IAO_0000119>A form of collaborative learning that follows a specific sequence of individual work, group work and immediate feedback; engages learners in learning activities within a small group that works independently in classes with high learner-faculty ratios (Anderson, 2010; Team-Based Learning Collaborative, n.d.; Thompson, Schneider, Haidet, Perkowski, &amp; Richards, 2007)</obo:IAO_0000119>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
+        <rdfs:label xml:lang="en">team-based learning</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MEDO_0000025 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MEDO_0000025">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000001"/>
+        <obo:IAO_0000119>Workshops, sessions, and/or activities contributing to the development of teamwork skills, often as a foundation for group work in learning (PBL, TBL, etc.) and practice (interprofessional/-disciplinary, etc.) (Morrison, Goldfarb, &amp; Lanken, 2010)</obo:IAO_0000119>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
+        <rdfs:label xml:lang="en">team-building</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MEDO_0000026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MEDO_0000026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000006"/>
+        <obo:IAO_0000119>Instruction provided to a learner or small group of learners by direct interaction with an instructor
+(ERIC, 1966c)</obo:IAO_0000119>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
+        <rdfs:label xml:lang="en">tutorial</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MEDO_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MEDO_0000027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000036"/>
+        <obo:IAO_0000119>An instructional session conducted in an actual clinical setting, using real patients or patient cases to demonstrate procedures or clinical skills, illustrate clinical reasoning and problem-solving, or stimulate discussion and analytical thinking among a group of learners (Bowen &amp; Smith, 2010; Wiener, 1974)</obo:IAO_0000119>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
+        <rdfs:label xml:lang="en">ward rounds</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MEDO_0000028 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MEDO_0000028">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000001"/>
+        <obo:IAO_0000119>A brief intensive educational program for a relatively small group of people that focuses especially on techniques and skills related to a specific topic (U. S. National Library of Medicine, 2011)</obo:IAO_0000119>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
+        <rdfs:label xml:lang="en">workshop</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MEDO_0000029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MEDO_0000029">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
+        <rdfs:label xml:lang="en">medical student role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MEDO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MEDO_0000030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
+        <rdfs:label xml:lang="en">blooms taxonomy goal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MEDO_0000032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MEDO_0000032">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000029"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
+        <rdfs:label xml:lang="en">medical student</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MEDO_0000036 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MEDO_0000036">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000003"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
+        <rdfs:label xml:lang="en">inpatient clinical experience</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MEDO_0000037 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MEDO_0000037">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000003"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
+        <rdfs:label xml:lang="en">outpatient clinical experience</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MEDO_0000038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MEDO_0000038">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000007"/>
+        <obo:IAO_0000119>An exchange (oral or written) of opinions, observations, or ideas among a Large Group [more than 12 participants], usually to analyze, clarify, or reach conclusions about issues, questions, or problems (ERIC, 1980)</obo:IAO_0000119>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
+        <rdfs:label xml:lang="en">large group discussion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MEDO_0000039 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MEDO_0000039">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000007"/>
+        <obo:IAO_0000119>An exchange (oral or written) of opinions, observations, or ideas among a small Group [12 or fewer participants], usually to analyze, clarify, or reach conclusions about issues, questions, or problems (ERIC, 1980)</obo:IAO_0000119>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
+        <rdfs:label xml:lang="en">small group discussion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MEDO_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MEDO_0000040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000014"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
+        <rdfs:label xml:lang="en">faculty-led patient presentation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MEDO_0000041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MEDO_0000041">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000014"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
+        <rdfs:label xml:lang="en">learner-led patient presentation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MEDO_0000042 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MEDO_0000042">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000014"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
+        <rdfs:label xml:lang="en">patient-led patient presentation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MEDO_0000043 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MEDO_0000043">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000001"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
+        <rdfs:label xml:lang="en">student-centric learning</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0001817 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0001817">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
+        <rdfs:label xml:lang="en">patient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OHD_0000179 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OHD_0000179">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-2104-0568"/>
+        <rdfs:label xml:lang="en">health care provider</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/medo.owl#MEDO_1000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#MEDO_1000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000115>a process of evaluating the degree to which a student has achieved a learning objective.</obo:IAO_0000115>
+        <rdfs:label>assessment method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/medo.owl#MEDO_1002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#MEDO_1002">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/medo.owl#MEDO_1000"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000032"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OHD_0000179"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/medo.owl#MEDO_1000"/>
+        <obo:IAO_0000115>a type of assessment which involves scoring the degree of completion or achievement of learning tasks in a clinical context.</obo:IAO_0000115>
+        <rdfs:label>clinical performance rating</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/medo.owl#MEDO_1003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#MEDO_1003">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/medo.owl#MEDO_1000"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000032"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OHD_0000179"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/medo.owl#MEDO_1000"/>
+        <obo:IAO_0000115>a type of assessment where students must respond to some prompt or question, and the response is evaluated by the instructor.</obo:IAO_0000115>
+        <obo:IAO_0000232>definition needs more parameters. Otherwise a random question asked orally by an instructor could be considered an exam, under the current definition.</obo:IAO_0000232>
+        <rdfs:label>exam</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/medo.owl#MEDO_1004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#MEDO_1004">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/medo.owl#MEDO_1000"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000032"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OHD_0000179"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/medo.owl#MEDO_1000"/>
+        <obo:IAO_0000232>Are the results of these assessments from multiple sources combined as part of a single assessment process? Meaning, all of these participants are providing input as part of the same assessment process?</obo:IAO_0000232>
+        <rdfs:label>The assessment of performance by multiple participants. These participants can include supervisors, peers, patients, and coworkers.</rdfs:label>
+        <rdfs:label>multisource assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/medo.owl#MEDO_1005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#MEDO_1005">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/medo.owl#MEDO_1000"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000032"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OHD_0000179"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/medo.owl#MEDO_1000"/>
+        <obo:IAO_0000115>an assessment in which the learner evaluates their own skills, performance, or mastery of learning objectives.</obo:IAO_0000115>
+        <obo:IAO_0000232>Should have narrative/non-narrative subtypes, as the self-assessment can include evaluation of clinical notes, logs, or other sources (narrative)</obo:IAO_0000232>
+        <rdfs:label>self-assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/medo.owl#MEDO_1006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#MEDO_1006">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/medo.owl#MEDO_1000"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000032"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OHD_0000179"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/medo.owl#MEDO_1000"/>
+        <obo:IAO_0000115>The presentation of a clinical case (patient) findings, history and physical; differential diagnosis; treatment plan, etc. by a learner to an instructor or small group, and subsequent discussion with the instructor and/or small group for the purposes of learner demonstrating skills in clinical reasoning, problem solving, etc.</obo:IAO_0000115>
+        <rdfs:label>oral patient presentation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/medo.owl#MEDO_1007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#MEDO_1007">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/medo.owl#MEDO_1000"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000032"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OHD_0000179"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/medo.owl#MEDO_1000"/>
+        <obo:IAO_0000115>Review of a learner&apos;s achievement of agreed-upon academic objectives or completion of a negotiated set of learning activities, based on a learner portfolio</obo:IAO_0000115>
+        <rdfs:label>portfolio-based assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/medo.owl#MEDO_1008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#MEDO_1008">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/medo.owl#MEDO_1000"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000032"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OHD_0000179"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/medo.owl#MEDO_1000"/>
+        <obo:IAO_0000115>Assessment of outcomes (e.g., posters, presentations, reports, etc) of a project in which the learner participated in or conducted research.</obo:IAO_0000115>
+        <rdfs:label>project-based assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/medo.owl#MEDO_1009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#MEDO_1009">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/medo.owl#MEDO_1003"/>
+        <obo:IAO_0000115>Practical performance-based examination developed internally to assess problem-solving, clinical reasoning, decision making, and/or communication skills</obo:IAO_0000115>
+        <rdfs:label>clinical performance licensure exam</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/medo.owl#MEDO_1010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#MEDO_1010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/medo.owl#MEDO_1003"/>
+        <obo:IAO_0000115>Practical performance-based examination developed internally for the measurement of problem-solving, clinical reasoning, decision making, and/or communication skills</obo:IAO_0000115>
+        <rdfs:label>institutionally developed clinical performance exam</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/medo.owl#MEDO_1011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#MEDO_1011">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/medo.owl#MEDO_1003"/>
+        <obo:IAO_0000115>Assessment method that involves hands-on or simulated exercises in which students collect or use data to test and/or verify hypotheses or to address questions about principles and/or phenomena.</obo:IAO_0000115>
+        <rdfs:label>institutionally developed laboratory practical exam</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/medo.owl#MEDO_1012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#MEDO_1012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/medo.owl#MEDO_1003"/>
+        <obo:IAO_0000115>Verbal examination developed internally to assess problem solving, clinical reasoning, decision making, and/or communication skills</obo:IAO_0000115>
+        <rdfs:label>institutionally developed oral exam</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/medo.owl#MEDO_1013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#MEDO_1013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/medo.owl#MEDO_1003"/>
+        <rdfs:label>institutionally developed written exam</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/medo.owl#MEDO_1014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#MEDO_1014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/medo.owl#MEDO_1003"/>
+        <rdfs:label>nationally standardized subject exam</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/medo.owl#MEDO_1015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#MEDO_1015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/medo.owl#MEDO_1003"/>
+        <obo:IAO_0000115>Standardized written examination which assesses learners&apos; factual knowledge retention, application of knowledge, concepts, and principles; problem-solving acumen; and clinical reasoning, for licensure to practice in a given jurisdiction.</obo:IAO_0000115>
+        <obo:IAO_0000232>Typically paired with a clinical performance component. May also be used by schools or learners to assess achievement of certain curricular objectives.</obo:IAO_0000232>
+        <rdfs:label>licensure exam</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
