@@ -804,6 +804,14 @@ LCME Glossary of Terms for LCME Accreditation Standards and Elements 2015-2016, 
         <obo:IAO_0000232>Typically paired with a clinical performance component. May also be used by schools or learners to assess achievement of certain curricular objectives.</obo:IAO_0000232>
         <rdfs:label>licensure exam</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/medo.owl#assessment -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#assessment">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+    </owl:Class>
 </rdf:RDF>
 
 
