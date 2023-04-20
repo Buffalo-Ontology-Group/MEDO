@@ -807,10 +807,11 @@ LCME Glossary of Terms for LCME Accreditation Standards and Elements 2015-2016, 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/medo.owl#assessment -->
+    <!-- http://purl.obolibrary.org/obo/medo.owl/MEDO_0000100 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#assessment">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl/MEDO_0000100">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <rdfs:label>educational assessment</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
