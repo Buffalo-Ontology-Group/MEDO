@@ -9,6 +9,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos1="http://www.w3.org/2008/05/skos#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
@@ -22,6 +23,25 @@
         <dc:contributor>Lauren Wishnie</dc:contributor>
         <dc:contributor>Lucas Serra</dc:contributor>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2008/05/skos#related -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2008/05/skos#related">
+        <rdfs:label>skos:related</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -502,6 +522,46 @@ LCME Glossary of Terms for LCME Accreditation Standards and Elements 2015-2016, 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/MEDO_0000101 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MEDO_0000101">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/medo.owl/MEDO_0000100"/>
+        <obo:IAO_0000115>A formal process of evaluating the degree to which a student or teacher has achieved one or more learning or skill objectives. This process coheres with standards-aligned methods of evaluation and returns an official valuation of performance.</obo:IAO_0000115>
+        <rdfs:label>formal assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MEDO_0000102 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MEDO_0000102">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/medo.owl/MEDO_0000100"/>
+        <obo:IAO_0000115>An informal process of evaluating the degree to which a student or teacher has achieved one or more learning or skill objectives. This process typically is an ad hoc, low-stakes evaluation that does not return an officially recorded valuation of performance.</obo:IAO_0000115>
+        <rdfs:label>informal assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MEDO_0000106 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MEDO_0000106">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000102"/>
+        <obo:IAO_0000115>An informal process of evaluating the degree to which a student or teacher has achieved one or more learning or skill objectives in order to assess and monitor student learning and to provide immediate feedback for the purpose of informing and improving student and teacher praxis without involving the determination of an official grade or valuation (e.g. checks for understanding or cold calling, teacher observation and feedback, student/peer observation and feedback, self-assessment, non-graded/valuated assignments or quizzes/tests, etc).</obo:IAO_0000115>
+        <rdfs:label>informal formative assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MEDO_0000107 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MEDO_0000107">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000102"/>
+        <obo:IAO_0000115>An informal process of evaluating the degree to which a student or teacher has achieved the intended set of learning or skill objectives at the conclusion of an instructional period without involving the determination of an official grade or valuation (e.g. self-assessment, teacher observation and feedback, student/peer observation and feedback).</obo:IAO_0000115>
+        <rdfs:label>informal summative assessment</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OAE_0001817 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0001817">
@@ -522,12 +582,32 @@ LCME Glossary of Terms for LCME Accreditation Standards and Elements 2015-2016, 
     
 
 
+    <!-- http://purl.obolibrary.org/obo//MEDO_0000103 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo//MEDO_0000103">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000101"/>
+        <obo:IAO_0000115>A formal process of evaluating the degree to which a student or teacher has achieved one or more learning or skill objectives in order to assess and monitor student learning and to provide immediate feedback for the purpose of informing and improving student and teacher praxis resulting in the determination of an official grade or valuation (e.g. daily and/or weekly quizzes/tests, assignments, projects, homework, etc).</obo:IAO_0000115>
+        <rdfs:label>formal formative assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo//MEDO_0000105 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo//MEDO_0000105">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000101"/>
+        <obo:IAO_0000115>A formal process of evaluating the degree to which a student or teacher has achieved the intended set of learning or skill objectives at the conclusion of an instructional period resulting in the determination of an official grade or valuation (e.g. unit, quarter, semester, year, course, program).</obo:IAO_0000115>
+        <rdfs:label>formal summative assessment</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/medo.owl#MEDO_1000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#MEDO_1000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <obo:IAO_0000115>a process of evaluating the degree to which a student has achieved a learning objective.</obo:IAO_0000115>
-        <rdfs:label>assessment method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+        <obo:IAO_0000115>A standards aligned plan specification for evaluating the degree to which a student has achieved one or more learning or skill objectives.</obo:IAO_0000115>
+        <rdfs:label>educational assessment method</rdfs:label>
     </owl:Class>
     
 
@@ -556,7 +636,9 @@ LCME Glossary of Terms for LCME Accreditation Standards and Elements 2015-2016, 
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/medo.owl#MEDO_1000"/>
         <obo:IAO_0000115>a type of assessment which involves scoring the degree of completion or achievement of learning tasks in a clinical context.</obo:IAO_0000115>
-        <rdfs:label>clinical performance rating</rdfs:label>
+        <rdfs:label>clinical performance rating/checklist method</rdfs:label>
+        <skos1:related>MedBiquitous - AM02: Clinical Performance
+Rating/Checklist</skos1:related>
     </owl:Class>
     
 
@@ -586,7 +668,7 @@ LCME Glossary of Terms for LCME Accreditation Standards and Elements 2015-2016, 
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/medo.owl#MEDO_1000"/>
         <obo:IAO_0000115>a type of assessment where students must respond to some prompt or question, and the response is evaluated by the instructor.</obo:IAO_0000115>
         <obo:IAO_0000232>definition needs more parameters. Otherwise a random question asked orally by an instructor could be considered an exam, under the current definition.</obo:IAO_0000232>
-        <rdfs:label>exam</rdfs:label>
+        <rdfs:label>exam method</rdfs:label>
     </owl:Class>
     
 
@@ -614,9 +696,9 @@ LCME Glossary of Terms for LCME Accreditation Standards and Elements 2015-2016, 
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/medo.owl#MEDO_1000"/>
+        <obo:IAO_0000115>The assessment of performance by multiple participants. These participants can include supervisors, peers, patients, and coworkers.</obo:IAO_0000115>
         <obo:IAO_0000232>Are the results of these assessments from multiple sources combined as part of a single assessment process? Meaning, all of these participants are providing input as part of the same assessment process?</obo:IAO_0000232>
-        <rdfs:label>The assessment of performance by multiple participants. These participants can include supervisors, peers, patients, and coworkers.</rdfs:label>
-        <rdfs:label>multisource assessment</rdfs:label>
+        <rdfs:label>multisource assessment method</rdfs:label>
     </owl:Class>
     
 
@@ -646,7 +728,7 @@ LCME Glossary of Terms for LCME Accreditation Standards and Elements 2015-2016, 
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/medo.owl#MEDO_1000"/>
         <obo:IAO_0000115>an assessment in which the learner evaluates their own skills, performance, or mastery of learning objectives.</obo:IAO_0000115>
         <obo:IAO_0000232>Should have narrative/non-narrative subtypes, as the self-assessment can include evaluation of clinical notes, logs, or other sources (narrative)</obo:IAO_0000232>
-        <rdfs:label>self-assessment</rdfs:label>
+        <rdfs:label>self-assessment method</rdfs:label>
     </owl:Class>
     
 
@@ -675,7 +757,7 @@ LCME Glossary of Terms for LCME Accreditation Standards and Elements 2015-2016, 
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/medo.owl#MEDO_1000"/>
         <obo:IAO_0000115>The presentation of a clinical case (patient) findings, history and physical; differential diagnosis; treatment plan, etc. by a learner to an instructor or small group, and subsequent discussion with the instructor and/or small group for the purposes of learner demonstrating skills in clinical reasoning, problem solving, etc.</obo:IAO_0000115>
-        <rdfs:label>oral patient presentation</rdfs:label>
+        <rdfs:label>oral patient presentation method</rdfs:label>
     </owl:Class>
     
 
@@ -704,7 +786,7 @@ LCME Glossary of Terms for LCME Accreditation Standards and Elements 2015-2016, 
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/medo.owl#MEDO_1000"/>
         <obo:IAO_0000115>Review of a learner&apos;s achievement of agreed-upon academic objectives or completion of a negotiated set of learning activities, based on a learner portfolio</obo:IAO_0000115>
-        <rdfs:label>portfolio-based assessment</rdfs:label>
+        <rdfs:label>portfolio-based assessment method</rdfs:label>
     </owl:Class>
     
 
@@ -733,7 +815,7 @@ LCME Glossary of Terms for LCME Accreditation Standards and Elements 2015-2016, 
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/medo.owl#MEDO_1000"/>
         <obo:IAO_0000115>Assessment of outcomes (e.g., posters, presentations, reports, etc) of a project in which the learner participated in or conducted research.</obo:IAO_0000115>
-        <rdfs:label>project-based assessment</rdfs:label>
+        <rdfs:label>project-based assessment method</rdfs:label>
     </owl:Class>
     
 
@@ -807,10 +889,123 @@ LCME Glossary of Terms for LCME Accreditation Standards and Elements 2015-2016, 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/medo.owl#clinical_performance_licensure_exam -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#clinical_performance_licensure_exam">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/medo.owl#exam"/>
+        <obo:IAO_0000115>Practical performance-based examination developed internally to assess problem-solving, clinical reasoning, decision making, and/or communication skills</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/medo.owl#exam -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#exam">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo//MEDO_0000105"/>
+        <obo:IAO_0000115>A type of assessment where students must respond to some prompt or question, and the response is evaluated by the instructor.</obo:IAO_0000115>
+        <rdfs:label>exam</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/medo.owl#institutionally_developed_clinical_performance_exam -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#institutionally_developed_clinical_performance_exam">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/medo.owl#exam"/>
+        <obo:IAO_0000115>Practical performance-based examination developed internally for the measurement of problem-solving, clinical reasoning, decision making, and/or communication skills</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/medo.owl#institutionally_developed_laboratory_practical_exam -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#institutionally_developed_laboratory_practical_exam">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/medo.owl#exam"/>
+        <obo:IAO_0000115>Assessment method that involves hands-on or simulated exercises in which students collect or use data to test and/or verify hypotheses or to address questions about principles and/or phenomena.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/medo.owl#institutionally_developed_oral_exam -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#institutionally_developed_oral_exam">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/medo.owl#exam"/>
+        <obo:IAO_0000115>Verbal examination developed internally to assess problem solving, clinical reasoning, decision making, and/or communication skills</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/medo.owl#institutionally_developed_written_exam -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#institutionally_developed_written_exam">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/medo.owl#exam"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/medo.owl#licensure_exam -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#licensure_exam">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/medo.owl#exam"/>
+        <obo:IAO_0000115>Standardized written examination which assesses learners&apos; factual knowledge retention, application of knowledge, concepts, and principles; problem-solving acumen; and clinical reasoning, for licensure to practice in a given jurisdiction.</obo:IAO_0000115>
+        <obo:IAO_0000232>Typically paired with a clinical performance component. May also be used by schools or learners to assess achievement of certain curricular objectives.</obo:IAO_0000232>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/medo.owl#nationally_standardized_subject_exam -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#nationally_standardized_subject_exam">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/medo.owl#exam"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/medo.owl#clinical_performance_rating/checklist -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#clinical_performance_rating/checklist">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo//MEDO_0000103"/>
+        <obo:IAO_0000115>A type of formal formative assessment which involves scoring the degree of completion or achievement of learning tasks in a clinical context.</obo:IAO_0000115>
+        <rdfs:label>formal formative clinical performance rating/checklist</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/medo.owl#formal_summative_clinical_performance_rating/checklist -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#formal_summative_clinical_performance_rating/checklist">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo//MEDO_0000105"/>
+        <obo:IAO_0000115>A type of formal summative assessment which involves scoring the degree of completion or achievement of learning tasks in a clinical context.</obo:IAO_0000115>
+        <rdfs:label>formal summative clinical performance rating/checklist</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/medo.owl#informal_formative_clinical_performance_rating/checklist -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#informal_formative_clinical_performance_rating/checklist">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000106"/>
+        <obo:IAO_0000115>A type of formal formative assessment which involves scoring the degree of completion or achievement of learning tasks in a clinical context.</obo:IAO_0000115>
+        <rdfs:label>informal formative clinical performance rating/checklist</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/medo.owl#informal_summative_clinical_performance_rating/checklist -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#informal_summative_clinical_performance_rating/checklist">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000107"/>
+        <obo:IAO_0000115>A type of informal summative assessment which involves scoring the degree of completion or achievement of learning tasks in a clinical context.</obo:IAO_0000115>
+        <rdfs:label>informal summative clinical performance rating/checklist</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/medo.owl/MEDO_0000100 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl/MEDO_0000100">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <obo:IAO_0000115>A process of evaluating the degree to which a student or teacher has achieved one or more learning or skill objectives.</obo:IAO_0000115>
         <rdfs:label>educational assessment</rdfs:label>
     </owl:Class>
 </rdf:RDF>
