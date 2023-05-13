@@ -978,11 +978,30 @@ Rating/Checklist</skos1:related>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/medo.owl#Multisource_Assessment -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#Multisource_Assessment">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo//MEDO_0000105"/>
+        <obo:IAO_0000115>A type of formal summative assessment of performance by supervisors, peers, patients, and coworkers.</obo:IAO_0000115>
+        <obo:IAO_0000119>MedBiquitous - AM09: A formal assessment of performance by supervisors, peers, patients, and coworkers (Bowen&amp; Smith, 2010; Institute for International Medical Education, 2002) (Also see Peer Assessment)
+
+Synonymous with/Includes: Multi-Rater Assessment; 360-Degree Assessment</obo:IAO_0000119>
+        <rdfs:label>multisource assessment</rdfs:label>
+        <skos1:related>MedBiquitous - AM09: Multisource Assessment</skos1:related>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/medo.owl#clinical_performance_licensure_exam -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#clinical_performance_licensure_exam">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/medo.owl#exam"/>
-        <obo:IAO_0000115>Practical performance-based examination developed internally to assess problem-solving, clinical reasoning, decision making, and/or communication skills</obo:IAO_0000115>
+        <obo:IAO_0000115>A type of formal summative practical performance-based examination developed by a professional licensing body to assess clinical skills such as problem solving, clinical reasoning, decision making, and communication, for licensure to practice in a given jurisdiction; typically paired with a written/computer-based component; may also be used by schools to assess learners’ achievement of certain curricular objectives.</obo:IAO_0000115>
+        <obo:IAO_0000119>MedBiquitous - AM06: Practical, performance-based examination developed by a professional licensing body to assess clinical skills such as problem solving, clinical reasoning, decision making, and communication, for licensure to practice in a given jurisdiction (e.g., USMLE for the United States); typically paired with a written/computer-based component (MCC, 2011a &amp; 2011c; NBOME, 2010b; USMLE, n.d.); may also be used by schools to assess learners’ achievement of certain curricular objectives
+
+Synonymous with/Includes: USMLE Step 2-CS, COMLEX Level 2-PE; MCC Part II; CEFM</obo:IAO_0000119>
+        <rdfs:label>clinical performance licensure exam</rdfs:label>
+        <skos1:related>MedBiquitous - AM06: Exam - Licensure, Clinical Performance</skos1:related>
     </owl:Class>
     
 
@@ -991,8 +1010,240 @@ Rating/Checklist</skos1:related>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#exam">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo//MEDO_0000105"/>
-        <obo:IAO_0000115>A type of assessment where students must respond to some prompt or question, and the response is evaluated by the instructor.</obo:IAO_0000115>
-        <rdfs:label>exam</rdfs:label>
+        <obo:IAO_0000115>A type of formal summative assessment where students must respond to some prompt or question, and the response is evaluated by the instructor.</obo:IAO_0000115>
+        <rdfs:label>formal summative educational examination</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/medo.owl#formal_clinical_documentation_review -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#formal_clinical_documentation_review">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo//MEDO_0000105"/>
+        <obo:IAO_0000115>A type of formal summative assessment and review of clinical notes and logs kept by learners as part of practical training in the clinical setting.</obo:IAO_0000115>
+        <obo:IAO_0000119>MedBiquitous - AM01: The review and assessment of clinical notes and logs kept by learners as part of practical training in the clinical setting (Bowen &amp; Smith, 2010; Irby, 1995)
+
+Synonymous with/Includes: Case Log; Chart Review; Clinical Encounter Log; Patient Workup
+
+Does not include: Portfolio-Based Assessment</obo:IAO_0000119>
+        <rdfs:label>clinical documentation review</rdfs:label>
+        <skos1:related>MedBiquitous - AM01: Clinical Documentation Review</skos1:related>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/medo.owl#formal_formative_oral_patient_presentation -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#formal_formative_oral_patient_presentation">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo//MEDO_0000103"/>
+        <obo:IAO_0000115>A type of formal formative assessment where a student presents clinical case (patient) findings, history and physical, differential diagnosis, treatment plan, etc., to an instructor or small group for the purpose of demonstrating skills in clinical reasoning and problem-solving and discussing the experience, process, and performance.</obo:IAO_0000115>
+        <obo:IAO_0000119>MedBiquitous - AM11: The presentation of clinical case (patient) findings, history and physical, differential diagnosis, treatment plan, etc., by a learner to an instructor or small group, and subsequent discussion with the instructor and/or small group for the purposes of learner demonstrating skills in clinical reasoning, problem-solving, etc. (Wiener, 1974)</obo:IAO_0000119>
+        <rdfs:label>formal formative oral patient presentation</rdfs:label>
+        <skos1:related>MedBiquitous - AM11: Oral Patient Presentation</skos1:related>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/medo.owl#formal_formative_participation_assessment -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#formal_formative_participation_assessment">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo//MEDO_0000103"/>
+        <obo:IAO_0000115>A type of formal formative assessment that evaluates the student&apos;s attendance, participation, engagement, and performance in an activity.</obo:IAO_0000115>
+        <obo:IAO_0000119>MedBiquitous - AM12: Sharing or taking part in an activity (ERIC, 1966b) 
+
+Synonymous with/Includes: Attendance</obo:IAO_0000119>
+        <rdfs:label>formal formative participation assessment</rdfs:label>
+        <skos1:related>MedBiquitous - AM12: Participation</skos1:related>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/medo.owl#formal_formative_peer_assessment -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#formal_formative_peer_assessment">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo//MEDO_0000103"/>
+        <obo:IAO_0000115>A type of formal formative assessment where fellow learner(s) observes, assesses, and provides written or oral subjective feedback of a learner&apos;s work or performance.</obo:IAO_0000115>
+        <obo:IAO_0000119>MedBiquitous - AM13: The concurrent or retrospective review by learners of the quality and efficiency of practices or services ordered or performed by fellow learners.
+
+Does not include: Multisource Assessment; Narrative Assessment</obo:IAO_0000119>
+        <rdfs:label>formal formative peer assessment</rdfs:label>
+        <skos1:related>MedBiquitous - AM13: Peer Assessment</skos1:related>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/medo.owl#formal_formative_teacher_observation_and_feedback -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#formal_formative_teacher_observation_and_feedback">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo//MEDO_0000103"/>
+        <obo:IAO_0000115>A type of formal formative assessment where teacher or observer(s) observes, assesses, and provides written or oral subjective feedback of a learner&apos;s work or performance.</obo:IAO_0000115>
+        <obo:IAO_0000119>MedBiquitous - AM10 - Narrative Assessment: An instructor&apos;s or observer&apos;s written subjective assessment of a learner&apos;s work or performance (Mennin, McConnell, &amp; Anderson, 1997); May Include: Comments within larger assessment; Observation of learner or small group by instructor
+
+Does not include: Clinical Documentation Review; Clinical Performance Rating/Checklist; Peer Assessment; Self-Assessment</obo:IAO_0000119>
+        <rdfs:label>formal formative teacher observation and feedback</rdfs:label>
+        <skos1:related>MedBiquitous - AM10: Narrative Assessment</skos1:related>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/medo.owl#formal_summative_oral_patient_presentation -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#formal_summative_oral_patient_presentation">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo//MEDO_0000105"/>
+        <obo:IAO_0000115>A type of formal summative assessment where a student presents clinical case (patient) findings, history and physical, differential diagnosis, treatment plan, etc., to an instructor or small group for the purpose of demonstrating skills in clinical reasoning and problem-solving and discussing the experience, process, and performance.</obo:IAO_0000115>
+        <obo:IAO_0000119>MedBiquitous - AM11: The presentation of clinical case (patient) findings, history and physical, differential diagnosis, treatment plan, etc., by a learner to an instructor or small group, and subsequent discussion with the instructor and/or small group for the purposes of learner demonstrating skills in clinical reasoning, problem-solving, etc. (Wiener, 1974)</obo:IAO_0000119>
+        <rdfs:label>formal summative oral patient presentation</rdfs:label>
+        <skos1:related>MedBiquitous - AM11: Oral Patient Presentation</skos1:related>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/medo.owl#formal_summative_participation_assessment -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#formal_summative_participation_assessment">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo//MEDO_0000105"/>
+        <obo:IAO_0000115>A type of formal summative assessment that evaluates the student&apos;s attendance, participation, engagement, and performance in an activity.</obo:IAO_0000115>
+        <obo:IAO_0000119>MedBiquitous - AM12: Sharing or taking part in an activity (ERIC, 1966b) 
+
+Synonymous with/Includes: Attendance</obo:IAO_0000119>
+        <rdfs:label>formal summative participation assessment</rdfs:label>
+        <skos1:related>MedBiquitous - AM12: Participation</skos1:related>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/medo.owl#formal_summative_peer_assessment -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#formal_summative_peer_assessment">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo//MEDO_0000105"/>
+        <obo:IAO_0000115>A type of formal summative assessment where fellow learner(s) observes, assesses, and provides written or oral subjective feedback of a learner&apos;s work or performance.</obo:IAO_0000115>
+        <obo:IAO_0000119>MedBiquitous - AM13: The concurrent or retrospective review by learners of the quality and efficiency of practices or services ordered or performed by fellow learners.
+
+Does not include: Multisource Assessment; Narrative Assessment</obo:IAO_0000119>
+        <rdfs:label>formal summative peer assessment</rdfs:label>
+        <skos1:related>MedBiquitous - AM13: Peer Assessment</skos1:related>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/medo.owl#formal_summative_teacher_observation_and_feedback -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#formal_summative_teacher_observation_and_feedback">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo//MEDO_0000105"/>
+        <obo:IAO_0000115>A type of formal summative assessment where teacher or observer(s) observes, assesses, and provides written or oral subjective feedback of a learner&apos;s work or performance.</obo:IAO_0000115>
+        <obo:IAO_0000119>MedBiquitous - AM10 - Narrative Assessment: An instructor&apos;s or observer&apos;s written subjective assessment of a learner&apos;s work or performance (Mennin, McConnell, &amp; Anderson, 1997); May Include: Comments within larger assessment; Observation of learner or small group by instructor
+
+Does not include: Clinical Documentation Review; Clinical Performance Rating/Checklist; Peer Assessment; Self-Assessment</obo:IAO_0000119>
+        <rdfs:label>formal summative teacher observation and feedback</rdfs:label>
+        <skos1:related>MedBiquitous - AM10: Narrative Assessment</skos1:related>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/medo.owl#informal_formative_oral_patient_presentation -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#informal_formative_oral_patient_presentation">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000106"/>
+        <obo:IAO_0000115>A type of informal formative assessment where a student presents clinical case (patient) findings, history and physical, differential diagnosis, treatment plan, etc., to an instructor or small group for the purpose of demonstrating skills in clinical reasoning and problem-solving and discussing the experience, process, and performance.</obo:IAO_0000115>
+        <obo:IAO_0000119>MedBiquitous - AM11: The presentation of clinical case (patient) findings, history and physical, differential diagnosis, treatment plan, etc., by a learner to an instructor or small group, and subsequent discussion with the instructor and/or small group for the purposes of learner demonstrating skills in clinical reasoning, problem-solving, etc. (Wiener, 1974)</obo:IAO_0000119>
+        <rdfs:label>informal formative oral patient presentation</rdfs:label>
+        <skos1:related>MedBiquitous - AM11: Oral Patient Presentation</skos1:related>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/medo.owl#informal_formative_participation_assessment -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#informal_formative_participation_assessment">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000106"/>
+        <obo:IAO_0000115>A type of informal formative assessment that evaluates the student&apos;s attendance, participation, engagement, and performance in an activity.</obo:IAO_0000115>
+        <obo:IAO_0000119>MedBiquitous - AM12: Sharing or taking part in an activity (ERIC, 1966b) 
+
+Synonymous with/Includes: Attendance</obo:IAO_0000119>
+        <rdfs:label>informal formative participation assessment</rdfs:label>
+        <skos1:related>MedBiquitous - AM12: Participation</skos1:related>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/medo.owl#informal_formative_peer_assessment -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#informal_formative_peer_assessment">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000106"/>
+        <obo:IAO_0000115>A type of informal formative assessment where fellow learner(s) observes, assesses, and provides written or oral subjective feedback of a learner&apos;s work or performance.</obo:IAO_0000115>
+        <obo:IAO_0000119>MedBiquitous - AM13: The concurrent or retrospective review by learners of the quality and efficiency of practices or services ordered or performed by fellow learners.
+
+Does not include: Multisource Assessment; Narrative Assessment</obo:IAO_0000119>
+        <rdfs:label>informal formative peer assessment</rdfs:label>
+        <skos1:related>MedBiquitous - AM13: Peer Assessment</skos1:related>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/medo.owl#informal_formative_teacher_observation_and_feedback -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#informal_formative_teacher_observation_and_feedback">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000106"/>
+        <obo:IAO_0000115>A type of informal formative assessment where teacher or observer(s) observes, assesses, and provides written or oral subjective feedback of a learner&apos;s work or performance.</obo:IAO_0000115>
+        <obo:IAO_0000119>MedBiquitous - AM10 - Narrative Assessment: An instructor&apos;s or observer&apos;s written subjective assessment of a learner&apos;s work or performance (Mennin, McConnell, &amp; Anderson, 1997); May Include: Comments within larger assessment; Observation of learner or small group by instructor
+
+Does not include: Clinical Documentation Review; Clinical Performance Rating/Checklist; Peer Assessment; Self-Assessment</obo:IAO_0000119>
+        <rdfs:label>informal formative teacher observation and feedback</rdfs:label>
+        <skos1:related>MedBiquitous - AM10: Narrative Assessment</skos1:related>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/medo.owl#informal_summative_oral_patient_presentation -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#informal_summative_oral_patient_presentation">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000107"/>
+        <obo:IAO_0000115>A type of informal summative assessment where a student presents clinical case (patient) findings, history and physical, differential diagnosis, treatment plan, etc., to an instructor or small group for the purpose of demonstrating skills in clinical reasoning and problem-solving and discussing the experience, process, and performance.</obo:IAO_0000115>
+        <obo:IAO_0000119>MedBiquitous - AM11: The presentation of clinical case (patient) findings, history and physical, differential diagnosis, treatment plan, etc., by a learner to an instructor or small group, and subsequent discussion with the instructor and/or small group for the purposes of learner demonstrating skills in clinical reasoning, problem-solving, etc. (Wiener, 1974)</obo:IAO_0000119>
+        <rdfs:label>informal summative oral patient presentation</rdfs:label>
+        <skos1:related>MedBiquitous - AM11: Oral Patient Presentation</skos1:related>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/medo.owl#informal_summative_participation_assessment -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#informal_summative_participation_assessment">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000107"/>
+        <obo:IAO_0000115>A type of informal summative assessment that evaluates the student&apos;s attendance, participation, engagement, and performance in an activity.</obo:IAO_0000115>
+        <obo:IAO_0000119>MedBiquitous - AM12: Sharing or taking part in an activity (ERIC, 1966b) 
+
+Synonymous with/Includes: Attendance</obo:IAO_0000119>
+        <rdfs:label>informal summative participation assessement</rdfs:label>
+        <skos1:related>MedBiquitous - AM12: Participation</skos1:related>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/medo.owl#informal_summative_peer_assessment -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#informal_summative_peer_assessment">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000107"/>
+        <obo:IAO_0000115>A type of informal summative assessment where fellow learner(s) observes, assesses, and provides written or oral subjective feedback of a learner&apos;s work or performance.</obo:IAO_0000115>
+        <obo:IAO_0000119>MedBiquitous - AM13: The concurrent or retrospective review by learners of the quality and efficiency of practices or services ordered or performed by fellow learners.
+
+Does not include: Multisource Assessment; Narrative Assessment</obo:IAO_0000119>
+        <rdfs:label>informal summative peer assessment</rdfs:label>
+        <skos1:related>MedBiquitous - AM13: Peer Assessment</skos1:related>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/medo.owl#informal_summative_teacher_observation_and_feedback -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#informal_summative_teacher_observation_and_feedback">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000107"/>
+        <obo:IAO_0000115>A type of informal summative assessment where teacher or observer(s) observes, assesses, and provides written or oral subjective feedback of a learner&apos;s work or performance.</obo:IAO_0000115>
+        <obo:IAO_0000119>MedBiquitous - AM10 - Narrative Assessment: An instructor&apos;s or observer&apos;s written subjective assessment of a learner&apos;s work or performance (Mennin, McConnell, &amp; Anderson, 1997); May Include: Comments within larger assessment; Observation of learner or small group by instructor
+
+Does not include: Clinical Documentation Review; Clinical Performance Rating/Checklist; Peer Assessment; Self-Assessment</obo:IAO_0000119>
+        <rdfs:label>informal summative teacher observation and feedback</rdfs:label>
+        <skos1:related>MedBiquitous - AM10: Narrative Assessment</skos1:related>
     </owl:Class>
     
 
@@ -1001,7 +1252,12 @@ Rating/Checklist</skos1:related>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#institutionally_developed_clinical_performance_exam">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/medo.owl#exam"/>
-        <obo:IAO_0000115>Practical performance-based examination developed internally for the measurement of problem-solving, clinical reasoning, decision making, and/or communication skills</obo:IAO_0000115>
+        <obo:IAO_0000115>A type of formal summative practical performance-based examination developed internally for the measurement of problem-solving, clinical reasoning, decision making, and/or communication skills.</obo:IAO_0000115>
+        <obo:IAO_0000119>MedBiquitous - AM03: Practical performance-based examination developed internally to assess problem solving, clinical reasoning, decision making, and[/or] communication skills (Includes observation of learner or small group by instructor)
+
+Synonymous with/Includes: OSCE; Virtual Patient; Practical Exam; Internal (practical) Exam; Image Analysis; Script Concordance; Simulation Exam; MiniCEX; CEX; SCEE (Simulated Clinical Encounter Examination)</obo:IAO_0000119>
+        <rdfs:label>institutionally developed clinical performance exam</rdfs:label>
+        <skos1:related>MedBiquitous - AM03: Exam - Institutionally Developed, Clinical Performance</skos1:related>
     </owl:Class>
     
 
@@ -1010,7 +1266,12 @@ Rating/Checklist</skos1:related>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#institutionally_developed_laboratory_practical_exam">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/medo.owl#exam"/>
-        <obo:IAO_0000115>Assessment method that involves hands-on or simulated exercises in which students collect or use data to test and/or verify hypotheses or to address questions about principles and/or phenomena.</obo:IAO_0000115>
+        <obo:IAO_0000115>A type of formal summative examination that involves hands-on or simulated exercises in which students collect or use data to test and/or verify hypotheses or to address questions about principles and/or phenomena.</obo:IAO_0000115>
+        <obo:IAO_0000119>MedBiquitous - AM19: Examination activities that use hands-on or simulated exercises in which students collect or use data to test and/or verify hypotheses or to address questions about principles and/or phenomena.
+
+Synonymous with/Includes: Laboratory Practicum; Anatomy Practical</obo:IAO_0000119>
+        <rdfs:label>institutionally developed laboratory practical exam</rdfs:label>
+        <skos1:related>Medbiquitous - AM19: Exam – Institutionally Developed, Laboratory Practical (Lab)</skos1:related>
     </owl:Class>
     
 
@@ -1019,7 +1280,10 @@ Rating/Checklist</skos1:related>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#institutionally_developed_oral_exam">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/medo.owl#exam"/>
-        <obo:IAO_0000115>Verbal examination developed internally to assess problem solving, clinical reasoning, decision making, and/or communication skills</obo:IAO_0000115>
+        <obo:IAO_0000115>A type of formal summative verbal examination developed internally to assess problem solving, clinical reasoning, decision making, or communication skills.</obo:IAO_0000115>
+        <obo:IAO_0000119>MedBiquitous - AM05: Verbal examination developed internally to assess problem solving, clinical reasoning, decision making, and[/or] communication skills.</obo:IAO_0000119>
+        <rdfs:label>institutionally developed oral exam</rdfs:label>
+        <skos1:related>MedBiquitous - AM05: Exam - Institutionally Developed, Oral</skos1:related>
     </owl:Class>
     
 
@@ -1028,6 +1292,12 @@ Rating/Checklist</skos1:related>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#institutionally_developed_written_exam">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/medo.owl#exam"/>
+        <obo:IAO_0000115>A type of formal summative examination utilizing various written or computer-based question-and-answer formats (multiple-choice, short answer, essay, etc.) which may assess learners&apos; factual knowledge retention; application of knowledge, concepts, and principles; problem-solving acumen; and clinical reasoning.</obo:IAO_0000115>
+        <obo:IAO_0000119>MedBiquitous - AM04: Examination utilizing various written question-and-answer formats (multiple-choice, short answer, essay, etc.) which may assess learners&apos; factual knowledge retention; application of knowledge, concepts, and principles; problem-solving acumen; and clinical reasoning (Cooke, Irby, &amp; O’Brien, 2010b).
+
+Synonymous with/Includes: Written Exam; Internal (written) Exam; MCQ; Multiple Choice; Quiz; Script Concordance</obo:IAO_0000119>
+        <rdfs:label>institutionally developed written or computer-based exam</rdfs:label>
+        <skos1:related>MedBiquitous - AM04: Exam - Institutionally Developed, Written/ Computer-based</skos1:related>
     </owl:Class>
     
 
@@ -1036,8 +1306,13 @@ Rating/Checklist</skos1:related>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#licensure_exam">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/medo.owl#exam"/>
-        <obo:IAO_0000115>Standardized written examination which assesses learners&apos; factual knowledge retention, application of knowledge, concepts, and principles; problem-solving acumen; and clinical reasoning, for licensure to practice in a given jurisdiction.</obo:IAO_0000115>
+        <obo:IAO_0000115>A type for formal summative standardized written or computer based examination which assesses learners&apos; factual knowledge retention, application of knowledge, concepts, and principles, problem-solving acumen, and clinical reasoning, for licensure to practice in a given jurisdiction; typically paired with a clinical performance component; may also be used by schools or learners themselves to assess achievement of certain curricular objectives.</obo:IAO_0000115>
+        <obo:IAO_0000119>MedBiquitous - AM07: Standardized written examination administered to assess learners&apos; factual knowledge retention; application of knowledge, concepts, and principles; problem-solving acumen; and clinical reasoning, for licensure to practice in a given jurisdiction (e.g., USMLE for the United States); typically paired with a clinical performance component (MCC, 2011a &amp; 2011b; NBOME, 2010b; USMLE, n.d.); may also be used by schools or learners themselves to assess achievement of certain curricular objectives
+
+Synonymous with/Includes: USMLE Step 1; USMLE Step 2-CK; COMLEX Level 1; COMLEX Level 2- CE; COMLEX Level 3; MCC Part I; CEFM</obo:IAO_0000119>
         <obo:IAO_0000232>Typically paired with a clinical performance component. May also be used by schools or learners to assess achievement of certain curricular objectives.</obo:IAO_0000232>
+        <rdfs:label>licensure exam</rdfs:label>
+        <skos1:related>MedBiquitous - AM07: Exam - Licensure, Written/ Computer-based</skos1:related>
     </owl:Class>
     
 
@@ -1046,6 +1321,12 @@ Rating/Checklist</skos1:related>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#nationally_standardized_subject_exam">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/medo.owl#exam"/>
+        <obo:IAO_0000115>A type of formal summative standardized written examination administered to assess learners’ achievement of nationally established educational expectations for various levels of training and/or specialized subject area(s).</obo:IAO_0000115>
+        <obo:IAO_0000119>MedBiquitous - AM08: Standardized written examination administered to assess learners’ achievement of nationally established educational expectations for various levels of training and/or specialized subject area(s) (e.g., NBME Subject or “Shelf” Exam) (NBME, 2011; NBOME, 2010a)
+
+Synonymous with/Includes: NBME; NBME Subject Exam; NBME Shelf; COMAT Subject Exam; COMSAE; COMVEX</obo:IAO_0000119>
+        <rdfs:label>nationally standardized subject exam</rdfs:label>
+        <skos1:related>MedBiquitous - AM08: Exam - Nationally Normed/ Standardized, Subject</skos1:related>
     </owl:Class>
     
 
@@ -1055,7 +1336,13 @@ Rating/Checklist</skos1:related>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#clinical_performance_rating/checklist">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo//MEDO_0000103"/>
         <obo:IAO_0000115>A type of formal formative assessment which involves scoring the degree of completion or achievement of learning tasks in a clinical context.</obo:IAO_0000115>
+        <obo:IAO_0000119>MedBiquitous - AM02: A non-narrative assessment tool (checklist, Likert-type scale, other instrument) used to note completion or achievement of learning tasks (MacRae, Vu, Graham, Word-Sims, Colliver, &amp; Robbs, 1995; Turnbull, Gray, &amp; MacFadyen, 1998) also see “Direct Observations or Performance Audits,” Institute for International Medical Education, 2002)
+
+Synonymous with/Includes: Rating Scale; Likert Scale; Reflection Feedback; Video Performance Rating; Rubric
+
+Does not include: Multisource Assessment; Peer Assessment; Self-Assessment</obo:IAO_0000119>
         <rdfs:label>formal formative clinical performance rating/checklist</rdfs:label>
+        <skos1:related>MedBiquitous - AM02: Clinical Performance Rating/Checklist</skos1:related>
     </owl:Class>
     
 
@@ -1065,7 +1352,13 @@ Rating/Checklist</skos1:related>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#formal_summative_clinical_performance_rating/checklist">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo//MEDO_0000105"/>
         <obo:IAO_0000115>A type of formal summative assessment which involves scoring the degree of completion or achievement of learning tasks in a clinical context.</obo:IAO_0000115>
+        <obo:IAO_0000119>MedBiquitous - AM02: A non-narrative assessment tool (checklist, Likert-type scale, other instrument) used to note completion or achievement of learning tasks (MacRae, Vu, Graham, Word-Sims, Colliver, &amp; Robbs, 1995; Turnbull, Gray, &amp; MacFadyen, 1998) also see “Direct Observations or Performance Audits,” Institute for International Medical Education, 2002)
+
+Synonymous with/Includes: Rating Scale; Likert Scale; Reflection Feedback; Video Performance Rating; Rubric
+
+Does not include: Multisource Assessment; Peer Assessment; Self-Assessment</obo:IAO_0000119>
         <rdfs:label>formal summative clinical performance rating/checklist</rdfs:label>
+        <skos1:related>MedBiquitous - AM02: Clinical Performance Rating/Checklist</skos1:related>
     </owl:Class>
     
 
@@ -1074,8 +1367,14 @@ Rating/Checklist</skos1:related>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#informal_formative_clinical_performance_rating/checklist">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000106"/>
-        <obo:IAO_0000115>A type of formal formative assessment which involves scoring the degree of completion or achievement of learning tasks in a clinical context.</obo:IAO_0000115>
+        <obo:IAO_0000115>A type of informal formative assessment which involves scoring the degree of completion or achievement of learning tasks in a clinical context.</obo:IAO_0000115>
+        <obo:IAO_0000119>MedBiquitous - AM02: A non-narrative assessment tool (checklist, Likert-type scale, other instrument) used to note completion or achievement of learning tasks (MacRae, Vu, Graham, Word-Sims, Colliver, &amp; Robbs, 1995; Turnbull, Gray, &amp; MacFadyen, 1998) also see “Direct Observations or Performance Audits,” Institute for International Medical Education, 2002)
+
+Synonymous with/Includes: Rating Scale; Likert Scale; Reflection Feedback; Video Performance Rating; Rubric
+
+Does not include: Multisource Assessment; Peer Assessment; Self-Assessment</obo:IAO_0000119>
         <rdfs:label>informal formative clinical performance rating/checklist</rdfs:label>
+        <skos1:related>MedBiquitous - AM02: Clinical Performance Rating/Checklist</skos1:related>
     </owl:Class>
     
 
@@ -1085,7 +1384,13 @@ Rating/Checklist</skos1:related>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#informal_summative_clinical_performance_rating/checklist">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000107"/>
         <obo:IAO_0000115>A type of informal summative assessment which involves scoring the degree of completion or achievement of learning tasks in a clinical context.</obo:IAO_0000115>
+        <obo:IAO_0000119>MedBiquitous - AM02: A non-narrative assessment tool (checklist, Likert-type scale, other instrument) used to note completion or achievement of learning tasks (MacRae, Vu, Graham, Word-Sims, Colliver, &amp; Robbs, 1995; Turnbull, Gray, &amp; MacFadyen, 1998) also see “Direct Observations or Performance Audits,” Institute for International Medical Education, 2002)
+
+Synonymous with/Includes: Rating Scale; Likert Scale; Reflection Feedback; Video Performance Rating; Rubric
+
+Does not include: Multisource Assessment; Peer Assessment; Self-Assessment</obo:IAO_0000119>
         <rdfs:label>informal summative clinical performance rating/checklist</rdfs:label>
+        <skos1:related>MedBiquitous - AM02: Clinical Performance Rating/Checklist</skos1:related>
     </owl:Class>
     
 
