@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/obi/2023-03-10/obi.owl" uri="http://purl.obolibrary.org/obo/obi.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1684107121722" name="http://purl.obolibrary.org/obo/medo.owl/" uri="MEDO%20v0.5.owl"/>
+    </group>
+</catalog>
