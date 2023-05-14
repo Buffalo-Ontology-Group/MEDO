@@ -695,7 +695,7 @@ LCME Glossary of Terms for LCME Accreditation Standards and Elements 2015-2016, 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#MEDO_1000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
-        <obo:IAO_0000115>A standards aligned plan specification for evaluating the degree to which a student has achieved one or more learning or skill objectives.</obo:IAO_0000115>
+        <obo:IAO_0000115>A modern education theory informed and standards aligned plan specification for evaluating the degree to which a student has achieved one or more learning or skill objectives.</obo:IAO_0000115>
         <rdfs:label>educational assessment method</rdfs:label>
     </owl:Class>
     
@@ -986,7 +986,7 @@ Rating/Checklist</skos1:related>
         <obo:IAO_0000119>MedBiquitous - AM09: A formal assessment of performance by supervisors, peers, patients, and coworkers (Bowen&amp; Smith, 2010; Institute for International Medical Education, 2002) (Also see Peer Assessment)
 
 Synonymous with/Includes: Multi-Rater Assessment; 360-Degree Assessment</obo:IAO_0000119>
-        <rdfs:label>multisource assessment</rdfs:label>
+        <rdfs:label>formal summative multisource assessment</rdfs:label>
         <skos1:related>MedBiquitous - AM09: Multisource Assessment</skos1:related>
     </owl:Class>
     
@@ -1026,7 +1026,7 @@ Synonymous with/Includes: USMLE Step 2-CS, COMLEX Level 2-PE; MCC Part II; CEFM<
 Synonymous with/Includes: Case Log; Chart Review; Clinical Encounter Log; Patient Workup
 
 Does not include: Portfolio-Based Assessment</obo:IAO_0000119>
-        <rdfs:label>clinical documentation review</rdfs:label>
+        <rdfs:label>formal summative clinical documentation review</rdfs:label>
         <skos1:related>MedBiquitous - AM01: Clinical Documentation Review</skos1:related>
     </owl:Class>
     
@@ -1068,6 +1068,22 @@ Synonymous with/Includes: Attendance</obo:IAO_0000119>
 Does not include: Multisource Assessment; Narrative Assessment</obo:IAO_0000119>
         <rdfs:label>formal formative peer assessment</rdfs:label>
         <skos1:related>MedBiquitous - AM13: Peer Assessment</skos1:related>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/medo.owl#formal_formative_self-assessment -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#formal_formative_self-assessment">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo//MEDO_0000103"/>
+        <obo:IAO_0000115>A type of formal formative assessment where student observes, evaluates, and reflects upon one’s own deficiencies, achievements, behavior or professional performance, and competencies. The assessment is completed by the learner to reflect upon and critically assess their own performance against a set of established criteria.</obo:IAO_0000115>
+        <obo:IAO_0000119>MedBiquitous - AM17: The process of evaluating one’s own deficiencies, achievements, behavior or professional performance and competencies (Institute for International Medical Education, 2002); Assessment completed by the learner to reflect and critically assess his/her own performance against a set of established criteria (Gordon, 1991) (NOTE: Does not refer to NBME Self-Assessment)
+
+Synonymous with/Includes: Observation of self on video
+
+Does not include: NBME Self-Assessment (National Board of Medical Examiners (NBME) Self-Assessment Services, n.d.)</obo:IAO_0000119>
+        <rdfs:label>formal formative self-assessment</rdfs:label>
+        <skos1:related>MedBiquitous - AM17: Self-Assessment</skos1:related>
     </owl:Class>
     
 
@@ -1126,6 +1142,48 @@ Does not include: Multisource Assessment; Narrative Assessment</obo:IAO_0000119>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/medo.owl#formal_summative_portfolio-based_assessment -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#formal_summative_portfolio-based_assessment">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo//MEDO_0000105"/>
+        <obo:IAO_0000115>A type of formal summative assessment review of a learner&apos;s achievement of agreed-upon academic objectives or completion of a negotiated set of learning activities compiled in a learner&apos;s portfolio.</obo:IAO_0000115>
+        <obo:IAO_0000119>MedBiquitous - AM14: Review of a learner&apos;s achievement of agreed-upon academic objectives or completion of a negotiated set of learning activities, based on a learner portfolio (Institute for International Medical Education, 2002) (&quot;a systematic collection of a student&apos;s work samples, records of observation, test results, etc., over a period of time&quot;— ERIC, 1994)</obo:IAO_0000119>
+        <rdfs:label>formal summative portfolio-based assessment</rdfs:label>
+        <skos1:related>MedBiquitous - AM14: Portfolio-Based Assessment</skos1:related>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/medo.owl#formal_summative_research_or_project_assessment -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#formal_summative_research_or_project_assessment">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo//MEDO_0000105"/>
+        <obo:IAO_0000115>A type of formal summative assessment of activities and outcomes (e.g., posters, presentations, reports, etc.) of a project in which the learner participated or conducted research.</obo:IAO_0000115>
+        <obo:IAO_0000119>MedBiquitous - AM16: Assessment of activities and outcomes (e.g., posters, presentations, reports, etc.) of a project in which the learner participated or conducted research (Dyrbye, Davidson, &amp; Cook, 2008)
+
+Synonymous with/Includes: Multi-Media Production</obo:IAO_0000119>
+        <rdfs:label>formal summative research or project assessment</rdfs:label>
+        <skos1:related>MedBiquitous - AM16: Research or Project Assessment</skos1:related>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/medo.owl#formal_summative_self-assessment -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#formal_summative_self-assessment">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo//MEDO_0000105"/>
+        <obo:IAO_0000115>A type of formal summative assessment where student observes, evaluates, and reflects upon one’s own deficiencies, achievements, behavior or professional performance, and competencies. The assessment is completed by the learner to reflect upon and critically assess their own performance against a set of established criteria.</obo:IAO_0000115>
+        <obo:IAO_0000119>MedBiquitous - AM17: The process of evaluating one’s own deficiencies, achievements, behavior or professional performance and competencies (Institute for International Medical Education, 2002); Assessment completed by the learner to reflect and critically assess his/her own performance against a set of established criteria (Gordon, 1991) (NOTE: Does not refer to NBME Self-Assessment)
+
+Synonymous with/Includes: Observation of self on video
+
+Does not include: NBME Self-Assessment (National Board of Medical Examiners (NBME) Self-Assessment Services, n.d.)</obo:IAO_0000119>
+        <rdfs:label>formal summative self-assessment</rdfs:label>
+        <skos1:related>MedBiquitous - AM17: Self-Assessment</skos1:related>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/medo.owl#formal_summative_teacher_observation_and_feedback -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#formal_summative_teacher_observation_and_feedback">
@@ -1180,6 +1238,22 @@ Does not include: Multisource Assessment; Narrative Assessment</obo:IAO_0000119>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/medo.owl#informal_formative_self-assessment -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#informal_formative_self-assessment">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000106"/>
+        <obo:IAO_0000115>A type of informal formative assessment where student observes, evaluates, and reflects upon one’s own deficiencies, achievements, behavior or professional performance, and competencies. The assessment is completed by the learner to reflect upon and critically assess their own performance against a set of established criteria.</obo:IAO_0000115>
+        <obo:IAO_0000119>MedBiquitous - AM17: The process of evaluating one’s own deficiencies, achievements, behavior or professional performance and competencies (Institute for International Medical Education, 2002); Assessment completed by the learner to reflect and critically assess his/her own performance against a set of established criteria (Gordon, 1991) (NOTE: Does not refer to NBME Self-Assessment)
+
+Synonymous with/Includes: Observation of self on video
+
+Does not include: NBME Self-Assessment (National Board of Medical Examiners (NBME) Self-Assessment Services, n.d.)</obo:IAO_0000119>
+        <rdfs:label>informal formative self assessment</rdfs:label>
+        <skos1:related>MedBiquitous - AM17: Self-Assessment</skos1:related>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/medo.owl#informal_formative_teacher_observation_and_feedback -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#informal_formative_teacher_observation_and_feedback">
@@ -1230,6 +1304,22 @@ Synonymous with/Includes: Attendance</obo:IAO_0000119>
 Does not include: Multisource Assessment; Narrative Assessment</obo:IAO_0000119>
         <rdfs:label>informal summative peer assessment</rdfs:label>
         <skos1:related>MedBiquitous - AM13: Peer Assessment</skos1:related>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/medo.owl#informal_summative_self-assessment -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#informal_summative_self-assessment">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MEDO_0000107"/>
+        <obo:IAO_0000115>A type of informal summative assessment where student observes, evaluates, and reflects upon one’s own deficiencies, achievements, behavior or professional performance, and competencies. The assessment is completed by the learner to reflect upon and critically assess their own performance against a set of established criteria.</obo:IAO_0000115>
+        <obo:IAO_0000119>MedBiquitous - AM17: The process of evaluating one’s own deficiencies, achievements, behavior or professional performance and competencies (Institute for International Medical Education, 2002); Assessment completed by the learner to reflect and critically assess his/her own performance against a set of established criteria (Gordon, 1991) (NOTE: Does not refer to NBME Self-Assessment)
+
+Synonymous with/Includes: Observation of self on video
+
+Does not include: NBME Self-Assessment (National Board of Medical Examiners (NBME) Self-Assessment Services, n.d.)</obo:IAO_0000119>
+        <rdfs:label>informal summative self-assessment</rdfs:label>
+        <skos1:related>MedBiquitous - AM17: Self-Assessment</skos1:related>
     </owl:Class>
     
 
@@ -1327,6 +1417,19 @@ Synonymous with/Includes: USMLE Step 1; USMLE Step 2-CK; COMLEX Level 1; COMLEX 
 Synonymous with/Includes: NBME; NBME Subject Exam; NBME Shelf; COMAT Subject Exam; COMSAE; COMVEX</obo:IAO_0000119>
         <rdfs:label>nationally standardized subject exam</rdfs:label>
         <skos1:related>MedBiquitous - AM08: Exam - Nationally Normed/ Standardized, Subject</skos1:related>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/medo.owl#stimulated_recall_method -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/medo.owl#stimulated_recall_method">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/medo.owl#MEDO_1000"/>
+        <obo:IAO_0000119>The use of various stimuli (e.g., written records, audio tapes, video tapes) to re-activate the experience of a learner during a learning activity or clinical encounter in order to reflect on task performance, reasoning, decision-making, interpersonal skills, personal thoughts and feelings, etc. (Barrows, 2000).
+
+Synonymous with/Includes: Chart-stimulated recall (CSR)</obo:IAO_0000119>
+        <rdfs:label>stimulated recall method</rdfs:label>
+        <skos1:related>MedBiquitous - AM18: Stimulated Recall</skos1:related>
     </owl:Class>
     
 
